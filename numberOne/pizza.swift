@@ -11,7 +11,7 @@ import Foundation
 protocol PizzaOrdering
 {
     func setSize(size: Sizes)
-    func setTopping(topping: Toppings)
+    func setTopping(topping:Array<Toppings>)
     func address(address:String)
     func TimeUntilDelivered()->Int
     
