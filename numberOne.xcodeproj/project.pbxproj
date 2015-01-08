@@ -13,6 +13,7 @@
 		110B69551A5F11D9002B627B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110B69541A5F11D9002B627B /* Images.xcassets */; };
 		110B69581A5F11D9002B627B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110B69561A5F11D9002B627B /* LaunchScreen.xib */; };
 		110B69641A5F11D9002B627B /* numberOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B69631A5F11D9002B627B /* numberOneTests.swift */; };
+		115B258A1A5F1DE500F1B8C6 /* pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B25891A5F1DE500F1B8C6 /* pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		110B695D1A5F11D9002B627B /* numberOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numberOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		110B69621A5F11D9002B627B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		110B69631A5F11D9002B627B /* numberOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numberOneTests.swift; sourceTree = "<group>"; };
+		115B25891A5F1DE500F1B8C6 /* pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				110B69541A5F11D9002B627B /* Images.xcassets */,
 				110B69561A5F11D9002B627B /* LaunchScreen.xib */,
 				110B694B1A5F11D9002B627B /* Supporting Files */,
+				115B25891A5F1DE500F1B8C6 /* pizza.swift */,
 			);
 			path = numberOne;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115B258A1A5F1DE500F1B8C6 /* pizza.swift in Sources */,
 				110B69501A5F11D9002B627B /* ViewController.swift in Sources */,
 				110B694E1A5F11D9002B627B /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				110B69691A5F11D9002B627B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		110B696A1A5F11D9002B627B /* Build configuration list for PBXNativeTarget "numberOneTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				110B696C1A5F11D9002B627B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
