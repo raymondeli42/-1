@@ -13,13 +13,13 @@ protocol PizzaOrdering
     func setSize(size: Sizes)
     func setTopping(topping:Array<Toppings>)
     func address(address:String)
-    func TimeUntilDelivered()->Int
+    func timeUntilDelivered()->Int
     
 }
 enum Sizes{
     case Small
     
-    case Midium
+    case Medium
     
     case Large
 }
@@ -32,4 +32,39 @@ enum Toppings{
     case Peppers
     
     case Sausage
+}
+
+class Pizza {
+    var size: Sizes?
+    var toppings:Array<Toppings>?
+    var address:String?
+}
+
+class PizzaPlace:PizzaOrdering {
+    var topping:Array<Pizza> = []
+    var stuff:Pizza = Pizza()
+    
+    func setSize(size: Sizes) {
+        
+       stuff.size = size
+    
+    }
+    func setTopping(topping: Array<Toppings>) {
+        stuff.toppings = topping
+    }
+    func address(address: String) {
+        stuff.address = address
+    }
+    func timeUntilDelivered() -> Int {
+        topping.insert(stuff, atIndex: 0)
+        return topping.count * 10
+    }
+    func person(size:Sizes,toppings:Array<Toppings>,addres:String){
+        setSize(size)
+        setTopping(toppings)
+        address(addres)
+        timeUntilDelivered()
+       println("The time it will take \(timeUntilDelivered())")
+    }
+    
 }
